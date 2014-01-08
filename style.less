@@ -14,9 +14,9 @@
 @coluna2: 30%;
 
 // header 
-@header: #eca402;
-@header-link: #fff; 
-@header-text: #fff;
+@header: #fff;
+@header-link: #ccc; 
+@header-text: #ccc;
 
 // navegacao
 @nav: #fff;
@@ -137,8 +137,10 @@ dl.portlet a:hover {
 
 /* area do topo */
 header {
-	background: @header url("img/fundo.jpg");
+	background: @header;
 	color: @header-text;
+}
+header>div {
 	.wrapper-size;
 }
 header a:link,
@@ -149,9 +151,25 @@ header a:visited {
 header a:hover {
     color: darken(contrast(@header-link), 10%);
 }
+/* stick */
+#main-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 2;
+    border-bottom: 1px solid #f1f1f1;
+    opacity: 0.95;
+    box-shadow: 0 0 2px 0 #888888;
+    width: 100%;
+}
 
 /* banner */
 
+#logo {
+	width: 25%;
+	float: left;
+}
 #logo a {
 	font-family: @title-font;
 	color: @header-link;
@@ -163,7 +181,7 @@ header a:hover {
 
 #logo img {
 	float: left;
-	margin: 0 1em 0.5em 0;
+	margin: 0.2em 1em 0.2em 0;
 	max-height: 100px;
 }
 
@@ -171,11 +189,13 @@ header a:hover {
 
 nav {
 	background: @nav;
-	color: @main-color;
-	padding: 0 mod(100%, @main-width);
+	color: @nav-link;
+	width: 75%;
+	float: left;
+	margin-top: 2.2em;
 }
 nav ul {
-	padding: 1.5em 0;
+	float: left;
 }
 nav li {
 	display: inline-block;
@@ -207,17 +227,14 @@ nav li a:hover {
 	font-size: 80%;
 	clear: both;
 	color: #fff;
+	margin-top: 2em;
 }
-#portal-breadcrumbs a {
+#portal-breadcrumbs a, .breadcrumbSeparator {
 	color: #fff;
 }
 .section-front-page #portal-breadcrumbs {
     display: none;
 }
-.section-front-page nav {
-    margin-bottom: 2em;
-}
-
 
 /* text styles */
 p {

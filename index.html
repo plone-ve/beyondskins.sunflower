@@ -11,6 +11,7 @@
     <![endif]-->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="behavior.js"></script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="touch_icon.png">
@@ -30,29 +31,37 @@
     <div id="wrapper">
 
     <!-- Header -->
-        <header role="banner">
+        <header id="main-header" role="banner">
+            <div>
 
-            <div id="logo">
-                <a href="#" title="#">
-                    <img src="img/logo.png" />
-                </a>
+                <div id="logo">
+                    <a href="#" title="#">
+                        <img src="img/logo.png" />
+                    </a>
                 </div>
+               
+        <!-- Main Menu -->
+
+                <a name="navegacao" id="navegacao"></a>
+                <nav id="main-navigation" role="navigation">
+                    <ul>
+                        <li class="selected"><a href="#" title="Link name">Section 1</a></li>
+                        <li><a href="#" title="Link name">Section 2</a></li>
+                        <li><a href="#" title="Link name">Section 3</a></li>
+                        <li><a href="#" title="Link name">Section 4</a></li>
+                        <li><a href="#" title="Link name">Section 5</a></li>
+                    </ul>
+                </nav>
+
+                <div class="clear"> </div>
             </div>
-           
-    <!-- Main Menu -->
-
-            <a name="navegacao" id="navegacao"></a>
-            <nav id="main-navigation" role="navigation">
-                <ul>
-                    <li class="selected"><a href="#" title="Link name">Section 1</a></li>
-                    <li><a href="#" title="Link name">Section 2</a></li>
-                    <li><a href="#" title="Link name">Section 3</a></li>
-                    <li><a href="#" title="Link name">Section 4</a></li>
-                    <li><a href="#" title="Link name">Section 5</a></li>
-                </ul>
-            </nav>
-
         </header>
+
+
+    <!-- Columns -->    
+        <div id="main">
+
+    <!-- Breadcrumb -->
 
         <div id="portal-breadcrumbs">
 
@@ -81,10 +90,6 @@
             </span>
 
         </div>
-
-
-    <!-- Columns -->    
-        <div id="main">
 
             <aside id="column-one">
                 <div class="visualPadding">

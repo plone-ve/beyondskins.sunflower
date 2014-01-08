@@ -70,7 +70,7 @@
 }
 .text-shadow {
   text-shadow: 1px 1px 2px #000000;
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 1px #cccccc;
 }
 /********** Basic styles **********/
 body {
@@ -117,43 +117,63 @@ dl.portlet a:hover {
 }
 /* area do topo */
 header {
-  background: #eca402 url("img/fundo.jpg");
-  color: #ffffff;
+  background: #ffffff;
+  color: #cccccc;
+}
+header > div {
   margin: 0 auto;
   width: 80%;
   max-width: 1200px;
 }
 header a:link,
 header a:visited {
-  color: #ffffff;
+  color: #cccccc;
   text-decoration: none;
 }
 header a:hover {
   color: #000000;
 }
+/* stick */
+#main-header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #f1f1f1;
+  opacity: 0.95;
+  box-shadow: 0 0 2px 0 #888888;
+  width: 100%;
+}
 /* banner */
+#logo {
+  width: 25%;
+  float: left;
+}
 #logo a {
   font-family: 'Unica One', Georgia, serif;
-  color: #ffffff;
+  color: #cccccc;
   font-size: 4em;
   font-weight: bold;
   line-height: 1em;
   text-shadow: 1px 1px 2px #000000;
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 1px #cccccc;
 }
 #logo img {
   float: left;
-  margin: 0 1em 0.5em 0;
+  margin: 0.2em 1em 0.2em 0;
   max-height: 100px;
 }
 /* Navigation */
 nav {
   background: #ffffff;
-  color: #285c6a;
-  padding: 0 20%;
+  color: #000000;
+  width: 75%;
+  float: left;
+  margin-top: 2.2em;
 }
 nav ul {
-  padding: 1.5em 0;
+  float: left;
 }
 nav li {
   display: inline-block;
@@ -185,15 +205,14 @@ nav li a:hover {
   font-size: 80%;
   clear: both;
   color: #fff;
+  margin-top: 2em;
 }
-#portal-breadcrumbs a {
+#portal-breadcrumbs a,
+.breadcrumbSeparator {
   color: #fff;
 }
 .section-front-page #portal-breadcrumbs {
   display: none;
-}
-.section-front-page nav {
-  margin-bottom: 2em;
 }
 /* text styles */
 p {
