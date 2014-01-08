@@ -342,29 +342,38 @@ footer p {
 
 /**** RESPONSIVE ***/
 
+#btnav i {display:none;}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 
+  
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    #main-content, #column-one, #column-two {display: block; width: 100%; padding: 0;}
+
+
+#logo {
+    float: none;
+    margin: 5px auto;
+}
+
+#logo a img {margin:0;}
+
+#btnav {background:transparent url(img/btmenu.jpg) no-repeat 0 0;width:40px;height:40px;display:block;top:0;position:absolute;}
+
+#btnav ul {display:none;}
+
+div:hover#btnav ul {padding-top:10px;display:block;top:40px;position:absolute;background:@nav;}
+
+#btnav i {display:block;font-size: 2em;padding-top:10px;}
+
+header > div {width:95%;}
+
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    #logo {
-        width: 100%;
-        float: left;
-        text-align: center;
-        clear: both;
-        margin-bottom: 1em;
-    }
-    #portal-searchbox {
-        float: none;
-        text-align: center;
-        clear: both;
-        font-size: 80%;
-    }
+
 }
