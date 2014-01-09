@@ -202,13 +202,14 @@ nav li a:hover {
 /********** Content **********/
 /* breadcrumb */
 #portal-breadcrumbs {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
   font-size: 80%;
   clear: both;
   color: #fff;
   margin-top: 2em;
+  position: absolute;
+  top: 300px;
+  margin-left: 8em;
+  width: 80%;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator {
@@ -332,15 +333,21 @@ footer p {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   #logo {
-    float: none;
-    margin: 5px auto;
+    float: right;
+  }
+  #portal-breadcrumbs {
+    display: none;
+  }
+  #main-header {
+    height: 45px;
   }
   #logo a img {
-    margin: 0;
+    margin-top: 5px;
+    width: 2.2em;
   }
   #btnav {
     background: transparent url(img/btmenu.jpg) no-repeat 0 0;
-    width: 40px;
+    width: 153px;
     height: 40px;
     display: block;
     top: 0;
@@ -356,13 +363,16 @@ footer p {
     position: absolute;
     background: #ffffff;
   }
+  div:hover#btnav ul li a {
+    padding: 10px;
+  }
   #btnav i {
     display: block;
     font-size: 2em;
     padding-top: 10px;
   }
   header > div {
-    width: 95%;
+    width: 93%;
   }
 }
 /* Landscape phones and down */

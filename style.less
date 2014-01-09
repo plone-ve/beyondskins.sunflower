@@ -227,11 +227,14 @@ nav li a:hover {
 /********** Content **********/
 /* breadcrumb */
 #portal-breadcrumbs {
-	.wrapper-size;
 	font-size: 80%;
 	clear: both;
 	color: #fff;
 	margin-top: 2em;
+    position: absolute;
+    top: 300px;
+    margin-left: 8em;
+    width: 80%;
 }
 #portal-breadcrumbs a, .breadcrumbSeparator {
 	color: #fff;
@@ -352,21 +355,26 @@ footer p {
 
 
 #logo {
-    float: none;
-    margin: 5px auto;
+    float: right;
 }
 
-#logo a img {margin:0;}
 
-#btnav {background:transparent url(img/btmenu.jpg) no-repeat 0 0;width:40px;height:40px;display:block;top:0;position:absolute;}
+#portal-breadcrumbs {display:none;}
+
+#main-header {height:45px;}
+
+#logo a img {margin-top:5px;width:2.2em}
+
+#btnav {background:transparent url(img/btmenu.jpg) no-repeat 0 0;width:153px;height:40px;display:block;top:0;position:absolute;}
 
 #btnav ul {display:none;}
 
 div:hover#btnav ul {padding-top:10px;display:block;top:40px;position:absolute;background:@nav;}
+div:hover#btnav ul li a {padding:10px;}
 
 #btnav i {display:block;font-size: 2em;padding-top:10px;}
 
-header > div {width:95%;}
+header > div {width:93%;}
 
 }
  
