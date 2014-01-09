@@ -80,7 +80,7 @@
 }
 /********** Basic styles **********/
 body {
-  background: #ffffff url(img/sunflower.jpg) no-repeat 0 5em;
+  background: #ffffff url(img/sunflower.jpg) no-repeat;
   background-size: 100%;
   color: #333333;
   font-family: 'Unica One', Verdana, Helvetica, sans-serif;
@@ -125,6 +125,15 @@ dl.portlet a:hover {
 header {
   background: #ffffff;
   color: #cccccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #f1f1f1;
+  opacity: 0.95;
+  box-shadow: 0 0 2px 0 #888888;
+  width: 100%;
 }
 header > div {
   margin: 0 auto;
@@ -138,18 +147,6 @@ header a:visited {
 }
 header a:hover {
   color: #000000;
-}
-/* stick */
-#main-header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff;
-  z-index: 2;
-  border-bottom: 1px solid #f1f1f1;
-  opacity: 0.95;
-  box-shadow: 0 0 2px 0 #888888;
-  width: 100%;
 }
 /* banner */
 #logo {
