@@ -80,7 +80,7 @@
 }
 /********** Basic styles **********/
 body {
-  background: #ffffff url(img/sunflower.jpg) no-repeat;
+  background: #ffffff url(img/background.jpg) no-repeat;
   background-size: 100%;
   color: #333333;
   font-family: 'Unica One', Verdana, Helvetica, sans-serif;
