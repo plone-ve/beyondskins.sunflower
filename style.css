@@ -176,7 +176,7 @@ nav {
   margin-top: 2.2em;
 }
 nav ul {
-  float: left;
+  float: right;
 }
 nav li {
   display: inline-block;
@@ -312,12 +312,12 @@ aside a {
 }
 /********** Footer **********/
 footer {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
   border-top: #d9d9d9 1px solid;
   margin-top: 2em;
   font-size: 80%;
+  padding-left: 10em;
+  padding-right: 10em;
+  width: 80%;
 }
 footer p {
   margin-bottom: 2em;
