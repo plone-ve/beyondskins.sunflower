@@ -382,6 +382,13 @@ footer p {
   header > div {
     width: 93%;
   }
+  #main-content,
+  #column-one,
+  #column-two {
+    display: block;
+    float: none;
+    width: 100%;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
