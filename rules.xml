@@ -49,6 +49,10 @@
         <rules if-content="not(//*[@id='portal-column-two'])">
             <drop css:theme="#column-two" />
         </rules>
+        
+        <!--Footer -->
+        <after css:content="#portal-siteactions" css:theme="p#footer-info" />
+
      
     </rules>
 

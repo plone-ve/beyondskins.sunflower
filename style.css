@@ -324,6 +324,9 @@ footer p {
 #footer-info {
   padding-top: 10px;
 }
+#portal-siteactions {
+  text-align: left;
+}
 /**** RESPONSIVE ***/
 #btnav i {
   display: none;
