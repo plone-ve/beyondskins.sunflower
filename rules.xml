@@ -31,7 +31,7 @@
         <replace css:content="#portal-personaltools" css:theme="#user" />
         <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
         <copy attributes="style" css:content="#portal-header" css:theme="header" />
-        <replace css:content="#portal-globalnav li" css:theme-children="nav ul" />
+        <replace css:content-children="#portal-globalnav" css:theme-children="nav ul" />
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw" />
         <drop css:content="#portal-breadcrumbs" />
 

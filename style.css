@@ -196,8 +196,70 @@ nav li a:visited {
   color: #000000;
 }
 nav li a:hover {
+  color: #333333;
+}
+/* DropDown compatibility */
+nav ul.submenu a {
+  background: #ffffff;
+  color: #000000 !important;
+  text-align: right;
+}
+nav ul.submenu a:hover {
   color: #000000;
-  opacity: 0.8;
+  background: #ffffff;
+}
+nav ul {
+  list-style-image: none;
+  position: relative;
+  /* fix ie */
+
+  zoom: 1;
+  /* fix ie */
+
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  border-top: 1px solid #fff;
+}
+nav li:hover > ul.submenu {
+  display: block;
+}
+ul.submenu {
+  display: none;
+  left: auto;
+  right: 0;
+  position: absolute;
+  top: 100%;
+}
+nav ul li:hover > ul.submenu {
+  display: block;
+}
+ul.submenu li {
+  float: none;
+  margin: 0 1px 1px 0;
+}
+nav ul ul.submenu li a {
+  padding: 0.5em 1.5em 0.5em 1em;
+  width: 12em;
+}
+ul.submenu ul {
+  top: 0;
+  left: auto;
+  right: 100%;
+}
+ul.submenu a.state-published:hover,
+.selected ul.submenu .state-published {
+  color: #333333 !important;
 }
 /********** Content **********/
 /* breadcrumb */
@@ -309,6 +371,17 @@ aside a {
 }
 .navTreeLevel6 a {
   padding-left: 5em;
+}
+/********** Config bugs *************/
+.label,
+.badge {
+  color: #333333;
+  text-shadow: 0;
+  background-color: transparent;
+}
+.label:empty,
+.badge:empty {
+  display: inline;
 }
 /********** Footer **********/
 footer {
