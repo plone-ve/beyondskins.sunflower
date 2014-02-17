@@ -91,6 +91,7 @@ a:visited,
 #content a:link,
 dl.portlet a:link {
   color: #1a3c45;
+  border-bottom: none;
 }
 .state-published {
   color: #1a3c45 !important;
@@ -119,7 +120,7 @@ dl.portlet a:hover {
 }
 /********** Header **********/
 #portal-personaltools {
-  position: absolute;
+  position: fixed;
 }
 /* area do topo */
 header {
@@ -311,7 +312,36 @@ h2 {
   font-weight: normal;
   margin-bottom: 1em;
 }
+#main-content img {
+  max-width: 100%;
+  height: auto;
+}
 /********** Tiles **********/
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+/* galeria */
+.cover-carousel-tile {
+  margin-bottom: 2em;
+}
+.galleria-stage {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.galleria-info-text {
+  padding: 0;
+}
+.galleria-info-title {
+  font: bold 2em/1.1 'Unica One', Georgia, serif;
+  font-weight: normal;
+}
+.galleria-info-description {
+  font: normal 1em/1.4 arial, helvetica, sans-serif;
+  margin: 0;
+  color: #333333;
+}
 /*********** Portlets ***********/
 /* general styles */
 .portletHeader,
@@ -465,5 +495,16 @@ footer p {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  
+  #logo {
+    width: 70%;
+  }
+  div.cell {
+    float: none;
+    width: 100% !important;
+    margin-left: -100% !important;
+  }
+  footer {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
