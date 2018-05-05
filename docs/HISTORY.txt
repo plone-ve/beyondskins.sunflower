@@ -1,0 +1,55 @@
+Changelog
+=========
+
+0.1dev (unreleased)
+-------------------
+
+- Added a simple Diazo theme package (Zip file) [macagua]
+
+- Added Plone theme package structure [macagua]
+
+- Adiciona icones que faltavam [agnogueira]
+
+- Cover styles [agnogueira]
+
+- Dropdown menu compatibility [agnogueira]
+
+- Typo [agnogueira]
+
+- Update preview image [agnogueira]
+
+- mudança no nome de atributo para validação [Tamosauskas]
+
+- ajustes de colunas para responsivos [Tamosauskas]
+
+- retorna site actions para o rodape [Tamosauskas]
+
+- muda nome dos ids para acces keys [Tamosauskas]
+
+- inclui access keys [Tamosauskas]
+
+- ajustes suaves no rodape [Tamosauskas]
+
+- ajustes suaves no layout [Tamosauskas]
+
+- Compile CSS [agnogueira]
+
+- Change background name [agnogueira]
+
+- Footer message [agnogueira]
+
+- ajustes de espaçamentos para varias resolucoes [Tamosauskas]
+
+- ajustes responsivos e breadcrumb [Tamosauskas]
+
+- Change header behavior [agnogueira]
+
+- inicio do responsivo [Tamosauskas]
+
+- Add coment about how to use [agnogueira]
+
+- Header changes [agnogueira]
+
+- Comit inicial [agnogueira]
+
+- Initial release
